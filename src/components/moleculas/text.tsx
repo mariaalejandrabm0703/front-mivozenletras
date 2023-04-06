@@ -1,29 +1,26 @@
 
 type TextType ={
+    title: string
     description: string
-    date?: string
 }
 
 
-const Text = (props: TextType) => {
+const Text = ({title, description}: TextType) => {
   return (
-    <div
-      className="flex items-center bg-white shadow-md p-4"
-    >
-      <div
-        className="mr-4 border border-gray-300 rounded-full flex justify-center items-center w-8 h-8"
-      >
-        <i
-          className="material-icons text-gray-500 text-sm"
-        >
-        </i>
-      </div>
-      <div className="flex flex-col">
-        <span className="text-gray-600 text-sm">
-        {props.description}
-        </span>
-      </div>
-    </div>
+    <div className="pt-12 border-t dark:border-gray-700">
+          <div className="flex flex-col space-y-4 md:space-y-0 md:space-x-6 md:flex-row">
+          <img
+              src="https://actionaidrecycling.org.uk/wp-content/uploads/2021/01/johann-siemens-EPy0gBJzzZU-unsplash-1208x800.jpg"
+              alt=""
+              className="self-center flex-shrink-0 w-24 h-24 border rounded-full md:justify-self-start dark:bg-gray-500 dark:border-gray-700"
+            />
+            <div className="flex flex-col">
+              <h4 className="text-lg font-semibold">{title}</h4>
+              <p className="dark:text-gray-400"> {description}
+              </p>
+            </div>
+          </div>
+        </div>
   );
 };
 

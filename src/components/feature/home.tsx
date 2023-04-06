@@ -2,10 +2,9 @@ import TextList from "../moleculas/list-text";
 
 function Home() {
   return (
-    <>
-      <h1>Home</h1>
-      <TextList />
-    </>
+    <div className="container mx-auto">
+      <TextList dateRegister="Jueves 6 e abril del 2023" />
+    </div>
   );
 }
 
