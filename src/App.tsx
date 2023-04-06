@@ -1,19 +1,19 @@
-import { useState } from 'react'
-import './App.css'
+import "./App.css";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./components/feature/home";
+import AdminText from "./components/feature/admin";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <div className="flex h-screen">
-            <div className="m-auto">
-                <div className="text-6xl text-red-600">{count}</div>
-                <button className="px-6 py-2 rounded bg-green-800 hover:bg-green-600 text-white" type="button" onClick={() => setCount((count) => count + 1)}>
-                    count+
-                </button>
-            </div>
-        </div>
-  )
+      <Router>
+        <Routes>
+          <Route path="/admin" element={<AdminText />} />
+          <Route path="/" element={<Home />} />
+        </Routes>
+      </Router>
+    </div>
+  );
 }
 
-export default App
+export default App;
