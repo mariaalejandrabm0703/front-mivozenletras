@@ -1,4 +1,4 @@
-import TextList from "../moleculas/list-text";
+import TextList from "../moleculas/ListText";
 
 function Home() {
   return (
