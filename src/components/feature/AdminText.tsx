@@ -2,7 +2,7 @@ import TextList from "../moleculas/ListText";
 import LoginForm from "../moleculas/LoginForm";
 import TextForm from "../moleculas/TextForm";
 
-const isLogin = true;
+const isLogin = false;
 
 function AdminText() {
   return (

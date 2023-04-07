@@ -2,6 +2,13 @@ function TextForm() {
   return (
     <div className="flex flex-col items-center py-2 rounded-lg border border-gray-300">
       <div className="flex flex-col w-full p-4">
+        <input
+          id="nombre"
+          type="text"
+          placeholder="Titulo"
+          className="py-2 px-2 mb-5 bg-gray-200 rounded-lg focus:outline-none"
+          required
+        />
         <textarea
           id="nombre"
           placeholder="Publica tus pensamientos ..."
