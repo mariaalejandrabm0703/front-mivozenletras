@@ -1,9 +1,27 @@
+import { usetTexts } from "../../hooks/useTexts";
 import TextList from "../moleculas/ListText";
 
+type Text = {
+  title: string;
+  description: string;
+  dateRegister: string;
+  id: string;
+};
+
 function Home() {
+  const { texts } = usetTexts();
+  
   return (
     <div className="container mx-auto">
-      <TextList dateRegister="Jueves 6 e abril del 2023" />
+      {texts &&
+        texts.map((text: Text) => (
+          <TextList
+            key={text.id}
+            title={text.title}
+            description={text.description}
+            dateRegister={text.dateRegister}
+          />
+        ))}
     </div>
   );
 }
