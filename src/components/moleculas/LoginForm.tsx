@@ -2,8 +2,6 @@ import { useFormik } from "formik";
 import { toast } from "sonner";
 import * as Yup from "yup";
 
-const URL = "https://mivozenletras.fly.dev/api/v1";
-
 const validationSchema = Yup.object({
   name: Yup.string().required("El nombre es obligatorio."),
   email: Yup.string()
@@ -37,7 +35,7 @@ function LoginForm({ setisLogin }: LoginTypeProps) {
         },
       };
 
-      fetch(`${URL}/login`, options)
+      fetch(`${import.meta.env.VITE_URL_API}/login`, options)
         .then((response) => response.json())
         .then((data) => {
           if(data.success === false){

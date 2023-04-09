@@ -1,7 +1,5 @@
 import getFormattedDate from "../helper/formatDate"
 
-const TEXTS_ENDPOINT = 'https://mivozenletras.fly.dev/api/v1'
-
 type Text = {
     title: string,
     description: string,
@@ -11,7 +9,7 @@ type Text = {
 }
 
 export const getText = async () => {
-    const res = await fetch(`${TEXTS_ENDPOINT}/texts/list`)
+    const res = await fetch(`${import.meta.env.VITE_URL_API}/texts/list`)
     const listText: Text[] = await res.json()
     return listText.map((text: Text) => {
         const date = new Date(text.dateRegister)

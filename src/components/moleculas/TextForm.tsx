@@ -2,8 +2,6 @@ import { useFormik } from "formik";
 import { toast } from "sonner";
 import * as Yup from "yup";
 
-const URL = "https://mivozenletras.fly.dev/api/v1";
-
 const validationSchema = Yup.object({
   title: Yup.string().required("El titulo es obligatorio."),
   description: Yup.string().required("La descripción es obligatorio."),
@@ -28,7 +26,7 @@ function TextForm() {
         },
       };
 
-      fetch(`${URL}/texts/save`, options)
+      fetch(`${import.meta.env.VITE_URL_API}/texts/save`, options)
         .then((response) => response.json())
         .then((data) => {
           if (data.success === false) {
