@@ -1,9 +1,10 @@
 type TextType = {
   title: string;
   description: string;
+  dateTime: string;
 };
 
-const Text = ({ title, description }: TextType) => {
+const Text = ({ title, description, dateTime }: TextType) => {
   return (
     <div className="pt-12 border-t dark:border-gray-700">
       <div className="flex flex-col space-y-4 md:space-y-0 md:space-x-6 md:flex-row">
@@ -15,6 +16,7 @@ const Text = ({ title, description }: TextType) => {
         <div className="flex flex-col">
           <h4 className="text-lg font-semibold">{title}</h4>
           <p className="dark:text-gray-400"> {description}</p>
+          <p className="mt-2 text-gray-400 text-xs"> {dateTime}</p>
         </div>
       </div>
     </div>

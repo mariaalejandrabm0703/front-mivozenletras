@@ -5,6 +5,7 @@ type Text = {
     title: string,
     description: string,
     dateRegister: string,
+    dateTime: string,
     id: string
 }
 

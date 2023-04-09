@@ -8,6 +8,7 @@ type Text = {
   title: string;
   description: string;
   dateRegister: string;
+  dateTime: string;
   id: string;
 };
 
@@ -32,6 +33,7 @@ function AdminText() {
             key={text.id}
             title={text.title}
             description={text.description}
+            dateTime={text.dateTime}
             dateRegister={text.dateRegister}
           />
         ))}
