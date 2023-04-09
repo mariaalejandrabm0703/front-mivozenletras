@@ -1,4 +1,4 @@
-import Text from "./text";
+import Text from "./Text";
 
 type TypeTextList = {
   dateRegister: string;
