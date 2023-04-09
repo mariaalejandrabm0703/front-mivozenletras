@@ -1,6 +1,6 @@
 import Text from "./Text";
 
-type DateListText = {
+type DateListTextTypeProps = {
   dateRegister: string;
   listText: Text[];
 };
@@ -13,7 +13,7 @@ type Text = {
   id: string;
 };
 
-const TextList = ({ listText, dateRegister }: DateListText) => {
+const TextList = ({ listText, dateRegister }: DateListTextTypeProps) => {
   return (
     <article className="max-w-2xl px-6 py-24 mx-auto space-y-12 dark:bg-gray-800 dark:text-gray-50">
       <div className="w-full mx-auto space-y-4 text-center">
@@ -24,6 +24,7 @@ const TextList = ({ listText, dateRegister }: DateListText) => {
       {listText &&
         listText.map((text: Text) => (
           <Text
+            key={text.id}
             title={text.title}
             description={text.description}
             dateTime={text.dateTime}

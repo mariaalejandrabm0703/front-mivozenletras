@@ -1,10 +1,10 @@
-type TextType = {
+type TextTypeProps = {
   title: string;
   description: string;
   dateTime: string;
 };
 
-const Text = ({ title, description, dateTime }: TextType) => {
+const Text = ({ title, description, dateTime }: TextTypeProps) => {
   return (
     <div className="pt-12 border-t dark:border-gray-700">
       <div className="flex flex-col space-y-4 md:space-y-0 md:space-x-6 md:flex-row">

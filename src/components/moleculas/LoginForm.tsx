@@ -12,11 +12,11 @@ const validationSchema = Yup.object({
   password: Yup.string().required("La contraseña es obligatoria."),
 });
 
-type LoginType = {
+type LoginTypeProps = {
   setisLogin: Function;
 };
 
-function LoginForm({ setisLogin }: LoginType) {
+function LoginForm({ setisLogin }: LoginTypeProps) {
   const formik = useFormik({
     initialValues: {
       name: "",
