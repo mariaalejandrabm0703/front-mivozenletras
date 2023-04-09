@@ -17,7 +17,6 @@ function TextForm() {
     },
     validationSchema: validationSchema,
     onSubmit: (values) => {
-      console.log(values);
       const options = {
         method: "POST",
         body: JSON.stringify({

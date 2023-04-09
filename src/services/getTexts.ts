@@ -20,7 +20,7 @@ export const getText = async () => {
         return {
             title: text.title,
             description: text.description,
-            dateRegister: formattedDate.split('/')[0],
+            dateRegister: text.dateRegister,
             dateTime: formattedDate.split('/')[1],
             id: text._id
         }

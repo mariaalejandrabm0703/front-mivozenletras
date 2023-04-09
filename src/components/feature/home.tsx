@@ -1,5 +1,11 @@
 import { usetTexts } from "../../hooks/useTexts";
+import getListText from "../../services/formatListTexts";
 import TextList from "../moleculas/ListText";
+
+type DateListText = {
+  dateRegister: string;
+  listText: Text[];
+};
 
 type Text = {
   title: string;
@@ -11,16 +17,15 @@ type Text = {
 
 function Home() {
   const { texts } = usetTexts();
+  const listText: Array<DateListText> = getListText(texts);
 
   return (
     <div className="container mx-auto">
-      {texts &&
-        texts.map((text: Text) => (
+      {listText &&
+        listText.map((text: DateListText) => (
           <TextList
-            key={text.id}
-            title={text.title}
-            description={text.description}
-            dateTime={text.dateTime}
+            key={text.dateRegister}
+            listText={text.listText}
             dateRegister={text.dateRegister}
           />
         ))}
