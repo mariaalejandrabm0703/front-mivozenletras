@@ -35,10 +35,10 @@ function LoginForm({ setisLogin }: LoginTypeProps) {
         },
       };
 
-      fetch(`${import.meta.env.VITE_URL_API}/login`, options)
+      fetch(`https://mivozenletras.fly.dev/api/v1/login`, options)
         .then((response) => response.json())
         .then((data) => {
-          if(data.success === false){
+          if (data.success === false) {
             toast.error(data.message)
             return
           }

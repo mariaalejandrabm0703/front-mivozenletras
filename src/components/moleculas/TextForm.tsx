@@ -26,7 +26,7 @@ function TextForm() {
         },
       };
 
-      fetch(`${import.meta.env.VITE_URL_API}/texts/save`, options)
+      fetch(`https://mivozenletras.fly.dev/api/v1/texts/save`, options)
         .then((response) => response.json())
         .then((data) => {
           if (data.success === false) {
