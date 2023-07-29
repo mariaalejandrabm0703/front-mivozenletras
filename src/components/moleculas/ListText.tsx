@@ -1,5 +1,6 @@
 import Text from "./Text";
 
+
 type DateListTextTypeProps = {
   dateRegister: string;
   listText: Text[];
