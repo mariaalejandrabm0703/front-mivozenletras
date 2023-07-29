@@ -10,7 +10,7 @@ function App() {
       <Toaster />
       <Router>
         <Routes>
-          <Route path="/admin" element={<AdminText />} />
+          <Route path="/front-mivozenletras/admin" element={<AdminText />} />
           <Route path="/front-mivozenletras" element={<Home />} />
         </Routes>
       </Router>
