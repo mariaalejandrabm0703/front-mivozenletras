@@ -37,5 +37,3 @@ Esta aplicación fue desarrollada por Maria Bohorquez.
 ### Licencia
 
 Esta aplicación está bajo la licencia Open source.
-
-VITE_URL_API=https://mivozenletras.fly.dev/api/v1
