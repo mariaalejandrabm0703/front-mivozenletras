@@ -11,7 +11,7 @@ function App() {
       <Router>
         <Routes>
           <Route path="/admin" element={<AdminText />} />
-          <Route path="/" element={<Home />} />
+          <Route path="/front-mivozenletras" element={<Home />} />
         </Routes>
       </Router>
     </div>
