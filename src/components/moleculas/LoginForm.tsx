@@ -65,7 +65,7 @@ function LoginForm({ setisLogin }: LoginTypeProps) {
               name="name"
               type="text"
               placeholder="Nombre"
-              className="py-2 px-6 bg-gray-200 rounded-lg focus:outline-none"
+              className="py-2 px-6 bg-blue-100 rounded-lg text-black text-bold"
               onChange={formik.handleChange}
               value={formik.values.name}
             />
@@ -79,7 +79,7 @@ function LoginForm({ setisLogin }: LoginTypeProps) {
               name="email"
               type="email"
               placeholder="Correo electrónico"
-              className="py-2 px-6 bg-gray-200 rounded-lg focus:outline-none"
+              className="py-2 px-6 bg-blue-100 rounded-lg text-black text-bold"
               onChange={formik.handleChange}
               value={formik.values.email}
             />
@@ -95,7 +95,7 @@ function LoginForm({ setisLogin }: LoginTypeProps) {
               name="password"
               type="password"
               placeholder="Contraseña"
-              className="py-2 px-6 bg-gray-200 rounded-lg focus:outline-none"
+              className="py-2 px-6 bg-blue-100 rounded-lg text-black text-bold"
               onChange={formik.handleChange}
               value={formik.values.password}
             />
@@ -107,7 +107,7 @@ function LoginForm({ setisLogin }: LoginTypeProps) {
           </div>
           <button
             type="submit"
-            className="px-20 py-2 text-white bg-gray-500 rounded-lg font-semibold hover:bg-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
+            className="w-full p-2 text-white bg-blue-500 rounded-lg font-semibold hover:bg-blue-600"
           >
             Ingresar
           </button>

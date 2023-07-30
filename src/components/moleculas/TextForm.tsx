@@ -59,7 +59,7 @@ function TextForm({ refreshText }: TextTypeProps) {
           name="title"
           type="text"
           placeholder="Titulo"
-          className="py-2 px-2 mb-5 bg-gray-200 rounded-lg focus:outline-none"
+          className="py-2 px-2 mb-5 bg-blue-100 rounded-lg text-black text-bold"
           onChange={formik.handleChange}
           value={formik.values.title}
         />
@@ -70,7 +70,7 @@ function TextForm({ refreshText }: TextTypeProps) {
           id="description"
           name="description"
           placeholder="Publica tus pensamientos ..."
-          className="p-2 bg-gray-200 rounded-lg focus:outline-none"
+          className="py-2 px-6 bg-blue-100 rounded-lg text-black text-bold"
           onChange={formik.handleChange}
           value={formik.values.description}
         />
@@ -82,7 +82,7 @@ function TextForm({ refreshText }: TextTypeProps) {
       </div>
       <button
         type="submit"
-        className="px-16 py-2 text-white bg-gray-500 rounded-lg font-semibold hover:bg-blue-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
+        className="px-16 py-2 text-white bg-blue-500 rounded-lg font-semibold hover:bg-blue-600"
       >
         Enviar
       </button>

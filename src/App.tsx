@@ -2,7 +2,6 @@ import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import AdminText from "./components/feature/AdminText";
 import { Toaster } from "sonner";
-import Home from "./components/feature/Home";
 
 function App() {
   return (
@@ -11,7 +10,6 @@ function App() {
       <Router>
         <Routes>
           <Route path="/front-mivozenletras" element={<AdminText />} />
-          //<Route path="/front-mivozenletras" element={<Home />} />
         </Routes>
       </Router>
     </div>
