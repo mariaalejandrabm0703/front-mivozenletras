@@ -16,7 +16,7 @@ type Text = {
 
 const TextList = ({ listText, dateRegister }: DateListTextTypeProps) => {
   return (
-    <article className="max-w-2xl px-6 py-24 mx-auto space-y-12 dark:bg-gray-800 dark:text-gray-50">
+    <article className="max-w-2xl px-6 py-16 mx-auto space-y-12 dark:bg-gray-800 dark:text-gray-50">
       <div className="w-full mx-auto space-y-4 text-center">
         <h1 className="text-4xl font-bold leading-tight md:text-4xl">
           {dateRegister}

@@ -32,7 +32,13 @@ function AdminText() {
   }, [isLogin]);
 
   return (
-    <div className="max-w-2xl px-6 py-24 mx-auto space-y-12 dark:bg-gray-800 dark:text-gray-50">
+    <div className="max-w-2xl px-6 py-16 mx-auto space-y-12 dark:bg-gray-800 dark:text-gray-50">
+      <div className="px-28 flex-auto">
+        <h1 className="text-4xl font-bold leading-tight md:text-4xl">
+          ¡Hola vida, bienvenida!
+        </h1>
+        <p className="mt-2 text-gray-400 text-xs">¿Qué quieres contarme hoy?</p>
+      </div>
       {isLogin ? <TextForm /> : <LoginForm setisLogin={setisLogin} />}
       {listText &&
         listText.map((text: DateListText) => (

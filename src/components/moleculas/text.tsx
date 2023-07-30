@@ -7,7 +7,7 @@ type TextTypeProps = {
 const Text = ({ title, description, dateTime }: TextTypeProps) => {
   //adiciono un comentario
   return (
-    <div className="pt-12 border-t dark:border-gray-700">
+    <div className="pt-8 border-t dark:border-gray-700">
       <div className="flex flex-col space-y-4 md:space-y-0 md:space-x-6 md:flex-row">
         <img
           src="./pictures/tree1.jpeg"
