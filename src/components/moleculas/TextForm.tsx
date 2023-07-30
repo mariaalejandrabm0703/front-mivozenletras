@@ -6,8 +6,11 @@ const validationSchema = Yup.object({
   title: Yup.string().required("El titulo es obligatorio."),
   description: Yup.string().required("La descripción es obligatorio."),
 });
+type TextTypeProps = {
+  refreshText: Function;
+};
 
-function TextForm() {
+function TextForm({ refreshText }: TextTypeProps) {
   const formik = useFormik({
     initialValues: {
       title: "",
@@ -37,6 +40,7 @@ function TextForm() {
             localStorage.setItem("texts/save", data);
             toast.success("Texto registrado exitosamente.");
             formik.resetForm();
+            refreshText();
           } else {
             toast.error("No se ha podido registrar texto.");
           }

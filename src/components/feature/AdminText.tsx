@@ -20,7 +20,7 @@ type Text = {
 
 function AdminText() {
   const [isLogin, setisLogin] = useState(false);
-  const { texts } = usetTexts();
+  const { texts, refreshText } = usetTexts();
   const listText: Array<DateListText> = getListText(texts);
 
   const getLogin = () => {
@@ -39,7 +39,7 @@ function AdminText() {
         </h1>
         <p className="mt-2 text-gray-400 text-xs">¿Qué quieres contarme hoy?</p>
       </div>
-      {isLogin ? <TextForm /> : <LoginForm setisLogin={setisLogin} />}
+      {isLogin ? <TextForm refreshText={refreshText} /> : <LoginForm setisLogin={setisLogin} />}
       {listText &&
         listText.map((text: DateListText) => (
           <TextList
