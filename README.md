@@ -30,6 +30,10 @@ Ejecuta npm start para iniciar la aplicación.
 
 Abre http://localhost:5173 en tu navegador web.
 
+### Deploy
+Se hizo deploy en github page
+https://mariaalejandrabm0703.github.io/front-mivozenletras/
+
 ### Créditos
 
 Esta aplicación fue desarrollada por Maria Bohorquez.
