@@ -16,7 +16,7 @@ ReactJS
 
 HTML
 
-CSS
+CSS y Tailwindcss
 
 ### Instalación y uso
 
